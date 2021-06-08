@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    width: 100%;
+    scroll-behavior: smooth;
+}
+/* background */
+.bg{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+/* Navigations */
+nav{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    /* background-color: white; */
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: 100px;
+}
+.logo img{
+    width: 140px;
+    height: 140px;
+}
+.navLinks{
+    width: 45%;
+    margin-right: 10vh;
+}
+.navLinks ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navLinks ul li{
+    list-style: none;
+}
+.navLinks ul li{
+    list-style: none;
+}
+.navLinks ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+.navLinks ul li a::after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 10px    ;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: rgb(0, 0, 0);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.navLinks ul li a:hover:after { 
+    width: 90%;
+    left: 2%; 
+  }
+/* End of Navigations */
+
+/* Start of the Body */
+.card{
+    width: 50%;
+    /* background-color: white; */
+    height: 500px;
+    margin-top: 150px;
+    margin-left: 200px;
+}
+.card h1{
+    font-size: 50px;
+    margin: 50px auto;
+}
+.card h3{
+    font-size: 36px;
+    font-weight: 300;
+    margin: 50px auto;
+}
+.card button{
+    width: 240px;
+    height: 70px;
+    font-size: 30px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.card button:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    transition: all .4s ease-in-out;
+}
+/* End of Card */
+/* topSeller */
+.topSeller{
+    width: 100%;
+    height: 80vh;
+    margin-top: 100px;
+}
+.topSeller h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+.topSeller hr{
+    width: 350px;
+    height:5px;
+    margin: 0 auto;
+    background-color: black;
+}
+.products{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tshirts{
+    margin: 0 70px;
+    text-align: center;
+}
+.tshirts h2{
+    margin: 25px auto;
+}
+/* About */
+.about{
+    width: 100%;
+    height: 95vh;
+    background-image: url(/src/img/AboutUSIMG.png);
+}
+.about h1{
+    font-size: 60px;
+    width: 30%;
+    text-align: center;
+    margin: 50px auto;
+    padding-top: 50px;
+}
+.container{
+    width: 60%;
+    margin: 0 auto;
+    height: 65%;
+    background-color: rgba(0, 0, 0, 0.178);
+    border-radius: 20px;
+}
+.container p{
+    color: rgb(26, 26, 26);
+    font-size: 24px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px;
+    font-weight: 500;
+}
+/* contact us */
+.contactUs{
+    width: 100%;
+    height: 90vh;
+}
+.leftSide{
+    width: 40%;
+    float: left;
+    /* margin: 70px; */
+    text-align: center;
+}
+.leftSide h1{
+    font-size: 59px;
+    margin-top: 100px;
+}
+
+.logos{
+    width: 400px;
+    height: 400px;
+   margin: 20px auto;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+}
+.icons img{
+    margin: 40px 30px;
+    width: 65px;
+    height: 50px;
+    cursor: pointer;
+}
+.rightSide{
+    margin-top:100px;
+    margin-right: 80px;
+    background-color: rgba(128, 128, 128, 0.466);
+    width: 50%;
+    float: right;
+    height: 80%;
+    border-radius: 20px;
+}
+form{
+    margin: 50px;
+}
+form label{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+form input{
+    width: 97%;
+    height: 40px;
+    margin: 20px 0;
+    border: none;
+    outline: none;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 25px;
+}
+form textarea{
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+form button{
+    float: right;
+    margin-right: 16px;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+form button:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all .4s ease-in-out;
+}
+/* footer */
+footer{
+    width: 100%;
+    height: 15vh;
+    background-image: url(/src/img/balwarte\ card\ 2.png);
+}
+footer img{
+    width: 130px;
+    margin: 0 auto;
+}
+footer h4{
+    text-align: center;
+    font-size: 24px;
+    padding-top: 80px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
